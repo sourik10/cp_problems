@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string str; cin>>str;
+    for(int i=0;i<str.size();i++){
+        if(str[i] >='5' && str[i] <='9'){
+            if(i==0 && str[i]=='9') continue;
+            str[i] ='0' + '9' - str[i];
+        }
+    }
+    cout<<str<<endl;
+    return 0;
+}
